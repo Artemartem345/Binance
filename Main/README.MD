@@ -2,3 +2,6 @@
 
 ТАКЖЕ ДЛЯ БИБЛИОТЕК - 
 pip install requirements.txt
+
+
+ЗАПУСК СКРИПТА - Main/main
