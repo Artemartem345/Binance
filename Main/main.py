@@ -19,7 +19,7 @@ time.sleep(8)
 
 adress = driver.find_element('id', 'withdraw-address-selection-input')
 time.sleep(3)
-adress.send_keys('binance-bts-1')
+adress.send_keys('binance-bts-1-start')
 time.sleep(5)
 
 
