@@ -4,16 +4,17 @@ import time
 from auth_data import *
 driver = uc.Chrome()
 driver.get( 'https://accounts.binance.com/ru/login?loginChannel=homepage&return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vcnUvbXkvZGFzaGJvYXJk')
-username = driver.find_element('id', 'username')
-username.send_keys(auth_username)
-driver.find_element('id','click_login_submit').click()
-time.sleep(5)
-driver.get('https://accounts.binance.com/ru/login-password?isNewLogin=true&loginChannel=homepage&return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vcnUvbXkvZGFzaGJvYXJk')
-password = driver.find_element('name','password')
-password.send_keys(auth_password)
-driver.find_element('id','click_login_submit').click()
-time.sleep(12)
 while True:
+    username = driver.find_element('id', 'username')
+    username.send_keys(auth_username)
+    driver.find_element('id','click_login_submit').click()
+    time.sleep(5)
+    driver.get('https://accounts.binance.com/ru/login-password?isNewLogin=true&loginChannel=homepage&return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vcnUvbXkvZGFzaGJvYXJk')
+    password = driver.find_element('name','password')
+    password.send_keys(auth_password)
+    driver.find_element('id','click_login_submit').click()
+    time.sleep(9)
+    
     driver.get('https://www.binance.com/ru/my/wallet/account/main/withdrawal/crypto/BTS')
     time.sleep(8)
 
