@@ -20,7 +20,7 @@ time.sleep(8)
 adress = driver.find_element('id', 'withdraw-address-selection-input')
 time.sleep(3)
 adress.send_keys('binance-bts-1')
-time.sleep(3)
+time.sleep(5)
 
 
 memo_adress = driver.find_element('name', 'memo')
