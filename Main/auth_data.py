@@ -1,4 +1,4 @@
-auth_username = 'popovartem3412@gmail.com'
-auth_password = '%$Fghnbcsdaqw23Q#$#'
+auth_username = 'your_email'
+auth_password = 'your_password'
 # КОЛИЧЕСТВО BTS КОТОРОЕ ХОЧЕШЬ ОТПРАВИТЬ
 amount_BTS = 10
